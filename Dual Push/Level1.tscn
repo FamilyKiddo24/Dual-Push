@@ -1,0 +1,104 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://BluePlayer.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Line.tscn" type="PackedScene" id=2]
+[ext_resource path="res://RedPlayer.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Wall.tscn" type="PackedScene" id=4]
+[ext_resource path="res://end-point.png" type="Texture" id=5]
+[ext_resource path="res://Box.tscn" type="PackedScene" id=6]
+[ext_resource path="res://BluePlayer.gd" type="Script" id=7]
+
+[sub_resource type="GDScript" id=1]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Line" parent="." instance=ExtResource( 2 )]
+position = Vector2( 215, 96 )
+scale = Vector2( 0.479999, 2.28 )
+script = SubResource( 1 )
+
+[node name="Wall" parent="." groups=["RedWalls"] instance=ExtResource( 4 )]
+position = Vector2( 72, 27 )
+
+[node name="Wall3" parent="." groups=["RedWalls"] instance=ExtResource( 4 )]
+position = Vector2( 72, 45 )
+
+[node name="Wall4" parent="." groups=["RedWalls"] instance=ExtResource( 4 )]
+position = Vector2( 72, 63 )
+
+[node name="Wall5" parent="." groups=["RedWalls"] instance=ExtResource( 4 )]
+position = Vector2( 72, 81 )
+
+[node name="Wall6" parent="." groups=["RedWalls"] instance=ExtResource( 4 )]
+position = Vector2( 72, 99 )
+
+[node name="Wall7" parent="." groups=["RedWalls"] instance=ExtResource( 4 )]
+position = Vector2( 72, 117 )
+
+[node name="Wall8" parent="." groups=["RedWalls"] instance=ExtResource( 4 )]
+position = Vector2( 72, 135 )
+
+[node name="Wall9" parent="." groups=["RedWalls"] instance=ExtResource( 4 )]
+position = Vector2( 72, 153 )
+
+[node name="Wall10" parent="." groups=["RedWalls"] instance=ExtResource( 4 )]
+position = Vector2( 72, 171 )
+
+[node name="Wall2" parent="." groups=["RedWalls"] instance=ExtResource( 4 )]
+position = Vector2( 108, 27 )
+
+[node name="Wall23" parent="." groups=["RedWalls"] instance=ExtResource( 4 )]
+position = Vector2( 90, 27 )
+
+[node name="Wall24" parent="." groups=["RedWalls"] instance=ExtResource( 4 )]
+position = Vector2( 90, 189 )
+
+[node name="Wall11" parent="." groups=["RedWalls"] instance=ExtResource( 4 )]
+position = Vector2( 126, 27 )
+
+[node name="Wall12" parent="." groups=["RedWalls"] instance=ExtResource( 4 )]
+position = Vector2( 126, 45 )
+
+[node name="Wall13" parent="." groups=["RedWalls"] instance=ExtResource( 4 )]
+position = Vector2( 126, 63 )
+
+[node name="Wall14" parent="." groups=["RedWalls"] instance=ExtResource( 4 )]
+position = Vector2( 126, 81 )
+
+[node name="Wall15" parent="." groups=["RedWalls"] instance=ExtResource( 4 )]
+position = Vector2( 126, 99 )
+
+[node name="Wall16" parent="." groups=["RedWalls"] instance=ExtResource( 4 )]
+position = Vector2( 126, 117 )
+
+[node name="Wall17" parent="." groups=["RedWalls"] instance=ExtResource( 4 )]
+position = Vector2( 126, 135 )
+
+[node name="Wall18" parent="." groups=["RedWalls"] instance=ExtResource( 4 )]
+position = Vector2( 126, 153 )
+
+[node name="Wall19" parent="." groups=["RedWalls"] instance=ExtResource( 4 )]
+position = Vector2( 126, 171 )
+
+[node name="Wall20" parent="." groups=["RedWalls"] instance=ExtResource( 4 )]
+position = Vector2( 126, 189 )
+
+[node name="Wall21" parent="." groups=["RedWalls"] instance=ExtResource( 4 )]
+position = Vector2( 108, 189 )
+
+[node name="Wall22" parent="." groups=["RedWalls"] instance=ExtResource( 4 )]
+position = Vector2( 72, 189 )
+
+[node name="End-point" type="Sprite" parent="."]
+position = Vector2( 99, 45 )
+texture = ExtResource( 5 )
+
+[node name="Box" parent="." instance=ExtResource( 6 )]
+position = Vector2( 99, 151 )
+
+[node name="BluePlayer" parent="." instance=ExtResource( 1 )]
+position = Vector2( 351, 117 )
+script = ExtResource( 7 )
+
+[node name="RedPlayer" parent="." instance=ExtResource( 3 )]
+position = Vector2( 99, 171 )
