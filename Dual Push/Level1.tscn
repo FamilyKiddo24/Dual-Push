@@ -1,0 +1,368 @@
+[gd_scene load_steps=18 format=2]
+
+[ext_resource path="res://BluePlayer.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Line.tscn" type="PackedScene" id=2]
+[ext_resource path="res://RedPlayer.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Wall.tscn" type="PackedScene" id=4]
+[ext_resource path="res://RedEndPoint.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Box.tscn" type="PackedScene" id=6]
+[ext_resource path="res://BlueBox.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Poppins-Medium.ttf" type="DynamicFontData" id=8]
+[ext_resource path="res://RestartButton.png" type="Texture" id=9]
+[ext_resource path="res://TextureButton.gd" type="Script" id=10]
+[ext_resource path="res://BlueEndPoint.tscn" type="PackedScene" id=14]
+[ext_resource path="res://EdgeScripts.gd" type="Script" id=17]
+[ext_resource path="res://Todo.gd" type="Script" id=18]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 9.5, 90 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 36, 9.5 )
+
+[sub_resource type="RectangleShape2D" id=4]
+
+[sub_resource type="DynamicFont" id=5]
+font_data = ExtResource( 8 )
+
+[node name="Level1" type="Node2D"]
+script = ExtResource( 18 )
+
+[node name="Background" type="ColorRect" parent="."]
+margin_right = 418.0
+margin_bottom = 238.0
+color = Color( 0.137255, 0.137255, 0.137255, 1 )
+
+[node name="EdgeScripts" type="Node" parent="."]
+script = ExtResource( 17 )
+
+[node name="Line" parent="." instance=ExtResource( 2 )]
+position = Vector2( 205, 179 )
+scale = Vector2( 0.479999, 2.28 )
+
+[node name="Line2" parent="." instance=ExtResource( 2 )]
+position = Vector2( 206, 19 )
+rotation = 1.5708
+scale = Vector2( 0.0799996, 0.4 )
+
+[node name="Wall" parent="." instance=ExtResource( 4 )]
+position = Vector2( 72, 27 )
+
+[node name="Wall3" parent="." instance=ExtResource( 4 )]
+position = Vector2( 72, 45 )
+
+[node name="Wall4" parent="." instance=ExtResource( 4 )]
+position = Vector2( 72, 63 )
+
+[node name="Wall5" parent="." instance=ExtResource( 4 )]
+position = Vector2( 72, 81 )
+
+[node name="Wall6" parent="." instance=ExtResource( 4 )]
+position = Vector2( 72, 99 )
+
+[node name="Wall7" parent="." instance=ExtResource( 4 )]
+position = Vector2( 72, 117 )
+
+[node name="Wall8" parent="." instance=ExtResource( 4 )]
+position = Vector2( 72, 135 )
+
+[node name="Wall9" parent="." instance=ExtResource( 4 )]
+position = Vector2( 72, 153 )
+
+[node name="Wall10" parent="." instance=ExtResource( 4 )]
+position = Vector2( 72, 171 )
+
+[node name="Wall2" parent="." instance=ExtResource( 4 )]
+position = Vector2( 108, 27 )
+
+[node name="Wall23" parent="." instance=ExtResource( 4 )]
+position = Vector2( 90, 27 )
+
+[node name="Wall24" parent="." instance=ExtResource( 4 )]
+position = Vector2( 90, 189 )
+
+[node name="Wall11" parent="." instance=ExtResource( 4 )]
+position = Vector2( 126, 27 )
+
+[node name="Wall12" parent="." instance=ExtResource( 4 )]
+position = Vector2( 126, 45 )
+
+[node name="Wall13" parent="." instance=ExtResource( 4 )]
+position = Vector2( 126, 63 )
+
+[node name="Wall14" parent="." instance=ExtResource( 4 )]
+position = Vector2( 126, 81 )
+
+[node name="Wall15" parent="." instance=ExtResource( 4 )]
+position = Vector2( 126, 99 )
+
+[node name="Wall16" parent="." instance=ExtResource( 4 )]
+position = Vector2( 126, 117 )
+
+[node name="Wall17" parent="." instance=ExtResource( 4 )]
+position = Vector2( 126, 135 )
+
+[node name="Wall18" parent="." instance=ExtResource( 4 )]
+position = Vector2( 126, 153 )
+
+[node name="Wall19" parent="." instance=ExtResource( 4 )]
+position = Vector2( 126, 171 )
+
+[node name="Wall20" parent="." instance=ExtResource( 4 )]
+position = Vector2( 126, 189 )
+
+[node name="Wall21" parent="." instance=ExtResource( 4 )]
+position = Vector2( 108, 189 )
+
+[node name="Wall22" parent="." instance=ExtResource( 4 )]
+position = Vector2( 72, 189 )
+
+[node name="Wall25" parent="." instance=ExtResource( 4 )]
+position = Vector2( 297, 27 )
+
+[node name="Wall26" parent="." instance=ExtResource( 4 )]
+position = Vector2( 297, 45 )
+
+[node name="Wall27" parent="." instance=ExtResource( 4 )]
+position = Vector2( 297, 63 )
+
+[node name="Wall28" parent="." instance=ExtResource( 4 )]
+position = Vector2( 297, 81 )
+
+[node name="Wall29" parent="." instance=ExtResource( 4 )]
+position = Vector2( 297, 99 )
+
+[node name="Wall30" parent="." instance=ExtResource( 4 )]
+position = Vector2( 297, 117 )
+
+[node name="Wall31" parent="." instance=ExtResource( 4 )]
+position = Vector2( 297, 135 )
+
+[node name="Wall32" parent="." instance=ExtResource( 4 )]
+position = Vector2( 297, 153 )
+
+[node name="Wall33" parent="." instance=ExtResource( 4 )]
+position = Vector2( 297, 171 )
+
+[node name="Wall34" parent="." instance=ExtResource( 4 )]
+position = Vector2( 333, 27 )
+
+[node name="Wall35" parent="." instance=ExtResource( 4 )]
+position = Vector2( 315, 27 )
+
+[node name="Wall36" parent="." instance=ExtResource( 4 )]
+position = Vector2( 315, 189 )
+
+[node name="Wall37" parent="." instance=ExtResource( 4 )]
+position = Vector2( 351, 27 )
+
+[node name="Wall38" parent="." instance=ExtResource( 4 )]
+position = Vector2( 351, 45 )
+
+[node name="Wall39" parent="." instance=ExtResource( 4 )]
+position = Vector2( 351, 63 )
+
+[node name="Wall40" parent="." instance=ExtResource( 4 )]
+position = Vector2( 351, 81 )
+
+[node name="Wall41" parent="." instance=ExtResource( 4 )]
+position = Vector2( 351, 99 )
+
+[node name="Wall42" parent="." instance=ExtResource( 4 )]
+position = Vector2( 351, 117 )
+
+[node name="Wall43" parent="." instance=ExtResource( 4 )]
+position = Vector2( 351, 135 )
+
+[node name="Wall44" parent="." instance=ExtResource( 4 )]
+position = Vector2( 351, 153 )
+
+[node name="Wall45" parent="." instance=ExtResource( 4 )]
+position = Vector2( 351, 171 )
+
+[node name="Wall46" parent="." instance=ExtResource( 4 )]
+position = Vector2( 351, 189 )
+
+[node name="Wall47" parent="." instance=ExtResource( 4 )]
+position = Vector2( 333, 189 )
+
+[node name="Wall48" parent="." instance=ExtResource( 4 )]
+position = Vector2( 297, 189 )
+
+[node name="RedEndPoint" parent="." instance=ExtResource( 5 )]
+position = Vector2( 99, 45 )
+
+[node name="BlueEndPoint" parent="." instance=ExtResource( 14 )]
+position = Vector2( 324, 171 )
+
+[node name="BlueBox" parent="." groups=["BlueBox"] instance=ExtResource( 7 )]
+position = Vector2( 324, 65 )
+
+[node name="RedBox" parent="." groups=["RedBox"] instance=ExtResource( 6 )]
+position = Vector2( 99, 151 )
+
+[node name="BluePlayer" parent="." groups=["BluePlayer"] instance=ExtResource( 1 )]
+position = Vector2( 324, 45 )
+
+[node name="RedPlayer" parent="." groups=["RedPlayer"] instance=ExtResource( 3 )]
+position = Vector2( 99, 171 )
+
+[node name="EdgeLeft" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EdgeLeft"]
+position = Vector2( 72.5, 108 )
+shape = SubResource( 2 )
+
+[node name="EdgeRight" type="Area2D" parent="."]
+position = Vector2( 53, 0 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EdgeRight"]
+position = Vector2( 72.5, 108 )
+shape = SubResource( 2 )
+
+[node name="EdgeUp" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EdgeUp"]
+position = Vector2( 99, 27.5 )
+shape = SubResource( 3 )
+
+[node name="EdgeDown" type="Area2D" parent="."]
+position = Vector2( 0, 161 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EdgeDown"]
+position = Vector2( 99, 27.5 )
+shape = SubResource( 3 )
+
+[node name="EdgeDownLeft" type="Area2D" parent="."]
+position = Vector2( 0, 161 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EdgeDownLeft"]
+position = Vector2( 73, 27 )
+shape = SubResource( 4 )
+
+[node name="EdgeDownRight" type="Area2D" parent="."]
+position = Vector2( 0, 161 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EdgeDownRight"]
+position = Vector2( 125, 27 )
+shape = SubResource( 4 )
+
+[node name="EdgeTopRight" type="Area2D" parent="."]
+position = Vector2( 0, 161 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EdgeTopRight"]
+position = Vector2( 125, -133 )
+shape = SubResource( 4 )
+
+[node name="EdgeTopLeft" type="Area2D" parent="."]
+position = Vector2( 0, 161 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EdgeTopLeft"]
+position = Vector2( 73, -133 )
+shape = SubResource( 4 )
+
+[node name="EdgeLeft2" type="Area2D" parent="."]
+position = Vector2( 225, 0 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EdgeLeft2"]
+position = Vector2( 72.5, 108 )
+shape = SubResource( 2 )
+
+[node name="EdgeRight2" type="Area2D" parent="."]
+position = Vector2( 278, 0 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EdgeRight2"]
+position = Vector2( 72.5, 108 )
+shape = SubResource( 2 )
+
+[node name="EdgeUp2" type="Area2D" parent="."]
+position = Vector2( 225, 0 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EdgeUp2"]
+position = Vector2( 99, 27.5 )
+shape = SubResource( 3 )
+
+[node name="EdgeDown2" type="Area2D" parent="."]
+position = Vector2( 225, 161 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EdgeDown2"]
+position = Vector2( 99, 27.5 )
+shape = SubResource( 3 )
+
+[node name="EdgeDownLeft2" type="Area2D" parent="."]
+position = Vector2( 225, 161 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EdgeDownLeft2"]
+position = Vector2( 73, 27 )
+shape = SubResource( 4 )
+
+[node name="EdgeDownRight2" type="Area2D" parent="."]
+position = Vector2( 225, 161 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EdgeDownRight2"]
+position = Vector2( 125, 27 )
+shape = SubResource( 4 )
+
+[node name="EdgeTopRight2" type="Area2D" parent="."]
+position = Vector2( 225, 161 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EdgeTopRight2"]
+position = Vector2( 125, -133 )
+shape = SubResource( 4 )
+
+[node name="EdgeTopLeft2" type="Area2D" parent="."]
+position = Vector2( 225, 161 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EdgeTopLeft2"]
+position = Vector2( 73, -133 )
+shape = SubResource( 4 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 182.0
+margin_right = 231.0
+margin_bottom = 23.0
+custom_fonts/font = SubResource( 5 )
+text = "Level 1"
+
+[node name="TextureButton" type="TextureButton" parent="."]
+margin_left = 198.0
+margin_top = 20.0
+margin_right = 213.0
+margin_bottom = 35.0
+texture_normal = ExtResource( 9 )
+expand = true
+script = ExtResource( 10 )
+
+[connection signal="body_entered" from="EdgeLeft" to="EdgeScripts" method="_on_EdgeLeft_body_entered"]
+[connection signal="body_exited" from="EdgeLeft" to="EdgeScripts" method="_on_EdgeLeft_body_exited"]
+[connection signal="body_entered" from="EdgeRight" to="EdgeScripts" method="_on_EdgeRight_body_entered"]
+[connection signal="body_exited" from="EdgeRight" to="EdgeScripts" method="_on_EdgeRight_body_exited"]
+[connection signal="body_entered" from="EdgeUp" to="EdgeScripts" method="_on_EdgeUp_body_entered"]
+[connection signal="body_exited" from="EdgeUp" to="EdgeScripts" method="_on_EdgeUp_body_exited"]
+[connection signal="body_entered" from="EdgeDown" to="EdgeScripts" method="_on_EdgeDown_body_entered"]
+[connection signal="body_exited" from="EdgeDown" to="EdgeScripts" method="_on_EdgeDown_body_exited"]
+[connection signal="body_entered" from="EdgeDownLeft" to="EdgeScripts" method="_on_EdgeDownLeft_body_entered"]
+[connection signal="body_exited" from="EdgeDownLeft" to="EdgeScripts" method="_on_EdgeDownLeft_body_exited"]
+[connection signal="body_entered" from="EdgeDownRight" to="EdgeScripts" method="_on_EdgeDownRight_body_entered"]
+[connection signal="body_exited" from="EdgeDownRight" to="EdgeScripts" method="_on_EdgeDownRight_body_exited"]
+[connection signal="body_entered" from="EdgeTopRight" to="EdgeScripts" method="_on_EdgeTopRight_body_entered"]
+[connection signal="body_exited" from="EdgeTopRight" to="EdgeScripts" method="_on_EdgeTopRight_body_exited"]
+[connection signal="body_entered" from="EdgeTopLeft" to="EdgeScripts" method="_on_EdgeTopLeft_body_entered"]
+[connection signal="body_exited" from="EdgeTopLeft" to="EdgeScripts" method="_on_EdgeTopLeft_body_exited"]
+[connection signal="body_entered" from="EdgeLeft2" to="EdgeScripts" method="_on_EdgeLeft2_body_entered"]
+[connection signal="body_exited" from="EdgeLeft2" to="EdgeScripts" method="_on_EdgeLeft2_body_exited"]
+[connection signal="body_entered" from="EdgeRight2" to="EdgeScripts" method="_on_EdgeRight2_body_entered"]
+[connection signal="body_exited" from="EdgeRight2" to="EdgeScripts" method="_on_EdgeRight2_body_exited"]
+[connection signal="body_entered" from="EdgeUp2" to="EdgeScripts" method="_on_EdgeUp2_body_entered"]
+[connection signal="body_exited" from="EdgeUp2" to="EdgeScripts" method="_on_EdgeUp2_body_exited"]
+[connection signal="body_entered" from="EdgeDown2" to="EdgeScripts" method="_on_EdgeDown2_body_entered"]
+[connection signal="body_exited" from="EdgeDown2" to="EdgeScripts" method="_on_EdgeDown2_body_exited"]
+[connection signal="body_entered" from="EdgeDownLeft2" to="EdgeScripts" method="_on_EdgeDownLeft2_body_entered"]
+[connection signal="body_exited" from="EdgeDownLeft2" to="EdgeScripts" method="_on_EdgeDownLeft2_body_exited"]
+[connection signal="body_entered" from="EdgeDownRight2" to="EdgeScripts" method="_on_EdgeDownRight2_body_entered"]
+[connection signal="body_exited" from="EdgeDownRight2" to="EdgeScripts" method="_on_EdgeDownRight2_body_exited"]
+[connection signal="body_entered" from="EdgeTopRight2" to="EdgeScripts" method="_on_EdgeTopRight2_body_entered"]
+[connection signal="body_exited" from="EdgeTopRight2" to="EdgeScripts" method="_on_EdgeTopRight2_body_exited"]
+[connection signal="body_entered" from="EdgeTopLeft2" to="EdgeScripts" method="_on_EdgeTopLeft2_body_entered"]
+[connection signal="body_exited" from="EdgeTopLeft2" to="EdgeScripts" method="_on_EdgeTopLeft2_body_exited"]
+[connection signal="pressed" from="TextureButton" to="TextureButton" method="_on_TextureButton_pressed"]
