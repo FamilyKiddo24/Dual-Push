@@ -1,4 +1,4 @@
-* Note This Is The Code Of The Game Dual Push And Not The Place to Download The Game and Play It *
+Note This Is The Code Of The Game Dual Push And Not The Place to Download The Game and Play It
   
 In Dual Push, players take on the challenge of controlling two characters simultaneously to maneuver boxes into designated spots on the level.
 Each level is a puzzle where strategic thinking and precise coordination are key to success.
