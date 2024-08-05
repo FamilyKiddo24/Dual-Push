@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://Poppins-Medium.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Wall.tscn" type="PackedScene" id=2]
@@ -6,6 +6,9 @@
 [ext_resource path="res://TextureButton.gd" type="Script" id=4]
 [ext_resource path="res://RestartButton.png" type="Texture" id=5]
 [ext_resource path="res://EdgeScripts.gd" type="Script" id=6]
+[ext_resource path="res://RedEndPoint.tscn" type="PackedScene" id=7]
+[ext_resource path="res://BlueEndPoint.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Spikes.tscn" type="PackedScene" id=9]
 
 [sub_resource type="DynamicFont" id=1]
 font_data = ExtResource( 1 )
@@ -116,64 +119,82 @@ position = Vector2( 81, 81 )
 position = Vector2( 81, 63 )
 
 [node name="Wall23" parent="." instance=ExtResource( 2 )]
-position = Vector2( 252, 81 )
+position = Vector2( 243, 81 )
 
 [node name="Wall24" parent="." instance=ExtResource( 2 )]
-position = Vector2( 270, 81 )
+position = Vector2( 261, 81 )
 
 [node name="Wall25" parent="." instance=ExtResource( 2 )]
-position = Vector2( 288, 81 )
+position = Vector2( 279, 81 )
 
 [node name="Wall26" parent="." instance=ExtResource( 2 )]
-position = Vector2( 306, 81 )
+position = Vector2( 297, 81 )
 
 [node name="Wall27" parent="." instance=ExtResource( 2 )]
-position = Vector2( 324, 81 )
+position = Vector2( 315, 81 )
 
 [node name="Wall28" parent="." instance=ExtResource( 2 )]
-position = Vector2( 342, 81 )
+position = Vector2( 333, 81 )
+
+[node name="Wall47" parent="." instance=ExtResource( 2 )]
+position = Vector2( 351, 81 )
 
 [node name="Wall29" parent="." instance=ExtResource( 2 )]
-position = Vector2( 360, 81 )
+position = Vector2( 369, 81 )
 
 [node name="Wall30" parent="." instance=ExtResource( 2 )]
-position = Vector2( 360, 99 )
+position = Vector2( 369, 99 )
 
 [node name="Wall31" parent="." instance=ExtResource( 2 )]
-position = Vector2( 360, 117 )
+position = Vector2( 369, 117 )
 
 [node name="Wall32" parent="." instance=ExtResource( 2 )]
-position = Vector2( 360, 135 )
+position = Vector2( 369, 135 )
 
 [node name="Wall33" parent="." instance=ExtResource( 2 )]
-position = Vector2( 342, 135 )
+position = Vector2( 351, 135 )
 
 [node name="Wall34" parent="." instance=ExtResource( 2 )]
-position = Vector2( 324, 135 )
+position = Vector2( 333, 135 )
 
 [node name="Wall35" parent="." instance=ExtResource( 2 )]
-position = Vector2( 306, 135 )
+position = Vector2( 315, 135 )
 
 [node name="Wall36" parent="." instance=ExtResource( 2 )]
-position = Vector2( 288, 135 )
+position = Vector2( 297, 135 )
 
 [node name="Wall37" parent="." instance=ExtResource( 2 )]
-position = Vector2( 270, 135 )
+position = Vector2( 279, 135 )
 
 [node name="Wall38" parent="." instance=ExtResource( 2 )]
-position = Vector2( 252, 135 )
+position = Vector2( 225, 153 )
+
+[node name="Wall43" parent="." instance=ExtResource( 2 )]
+position = Vector2( 279, 153 )
+
+[node name="Wall44" parent="." instance=ExtResource( 2 )]
+position = Vector2( 225, 171 )
+
+[node name="Wall45" parent="." instance=ExtResource( 2 )]
+position = Vector2( 261, 171 )
+
+[node name="Wall48" parent="." instance=ExtResource( 2 )]
+position = Vector2( 243, 171 )
+
+[node name="Wall46" parent="." instance=ExtResource( 2 )]
+position = Vector2( 279, 171 )
 
 [node name="Wall39" parent="." instance=ExtResource( 2 )]
-position = Vector2( 234, 135 )
+position = Vector2( 225, 135 )
 
 [node name="Wall40" parent="." instance=ExtResource( 2 )]
-position = Vector2( 234, 117 )
+position = Vector2( 225, 117 )
 
 [node name="Wall41" parent="." instance=ExtResource( 2 )]
-position = Vector2( 234, 99 )
+position = Vector2( 225, 99 )
 
 [node name="Wall42" parent="." instance=ExtResource( 2 )]
-position = Vector2( 234, 81 )
+position = Vector2( 225, 81 )
 
 [node name="EdgeUp" type="Area2D" parent="."]
 
@@ -200,5 +221,17 @@ shape = SubResource( 3 )
 position = Vector2( 134.5, 117 )
 rotation = 1.5708
 shape = SubResource( 4 )
+
+[node name="Spikes" parent="." instance=ExtResource( 9 )]
+position = Vector2( 243, 153 )
+
+[node name="Spikes2" parent="." instance=ExtResource( 9 )]
+position = Vector2( 261, 153 )
+
+[node name="RedEndPoint" parent="." instance=ExtResource( 7 )]
+position = Vector2( 108, 171 )
+
+[node name="BlueEndPoint" parent="." instance=ExtResource( 8 )]
+position = Vector2( 351, 108 )
 
 [connection signal="pressed" from="TextureButton" to="TextureButton" method="_on_TextureButton_pressed"]
